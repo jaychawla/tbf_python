@@ -2,63 +2,68 @@
 
 #Enemy Class
 
-#Buster Baker-Porazinski 
+#Buster Baker-Porazinski
+
+
 
 class enemy(object):
-	
-	def _init_(self, punchd, kickd, grapd, puncho, kicko, grapo, hp, speed, name, appid): 
 
-		self.punchd = punchd
-		self.kickd = kickd
-		self.grapd = grapd
+            def __init__(self, punchd, kickd, grapd, puncho, kicko, grapo, hp, speed, name, appid): 
 
-		self.puncho = puncho
-		self.kicko = kicko
-		self.grapo = grapo 
+                    self.punchd = punchd
+                    self.kickd = kickd
+                    self.grapd = grapd
 
-		self.hp = hp
-		self.speed = speed
-		self.name = name
-		self.appid = appid
+                    self.puncho = puncho
+                    self.kicko = kicko
+                    self.grapo = grapo 
 
-	def getPunchd(self):
-		return self.punchd
+                    self.hp = hp
+                    self.speed = speed
+                    self.name = name
+                    self.appid = appid
 
-	def getKickd(self):
-		return self.kickd
+            def getPunchd(self):
+                    return self.punchd
 
-	def getGrapd(self):
-		return self.grapd
+            def getKickd(self):
+                    return self.kickd
 
-
-
-	def getPuncho(self):
-		return self.puncho
-
-	def getKicko(self):
-		return self.kicko
-
-	def getGrapo(self):
-		return self.grapo
+            def getGrapd(self):
+                    return self.grapd
 
 
 
-	def getHp(self):
-		return self.hp
+            def getPuncho(self):
+                    return self.puncho
 
-	def getSpeed(self):
-		return self.speed
+            def getKicko(self):
+                    return self.kicko
 
-	def getName(self):
-		return self.name
-
-	def getAppid(self):
-		return self.appid
+            def getGrapo(self):
+                    return self.grapo
 
 
 
-	def __str__ (self):
-		return "%s is an enemy." % (self.name)
+            def getHp(self):
+                    return self.hp
 
+            def getSpeed(self):
+                    return self.speed
+
+            def getName(self):
+                    return self.name
+
+            def getAppid(self):
+                    return self.appid
+
+
+
+            def __str__ (self):
+                    return "%s is an enemy." % (self.name)
+def main():
+    e= enemy(10, 10, 10, 10, 10, 10, 10, 10, "Name" , 10)
+    print(e)
+main()
 
 
