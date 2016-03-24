@@ -15,7 +15,7 @@ class Currency(object):
 		return self.moneypool #returns moneypool total.
 
 
-	def getLAdd(self, avalue): #adds an ammount and returns that amount too money pool.
+	def getLAdd(self, avalue): #adds an amount and returns that amount too money pool.
 
 		self.avalue = avalue
 		self.moneypool = (self.avalue + self.moneypool)
@@ -25,7 +25,7 @@ class Currency(object):
 		return self.lastadd
 
 
-	def getLSub(self, svalue): #subtracts an ammount and returns that amount from money pool.
+	def getLSub(self, svalue): #subtracts an amount and returns that amount from money pool.
 
 		self.svalue = svalue
 		self.moneypool = (self.svalue - self.moneypool)
